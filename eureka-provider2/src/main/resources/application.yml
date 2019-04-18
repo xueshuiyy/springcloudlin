@@ -7,3 +7,7 @@ server:
 spring:
   application:
     name: provider-hi
+  security:
+    user:
+      name: root
+      password: 123456

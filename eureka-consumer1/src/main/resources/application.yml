@@ -1,9 +1,14 @@
+server:
+  port: 8764
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://root:123456@www.lin.com:8760/eureka/,http://root:123456@www.lin.com:8761/eureka/
-server:
-  port: 8764
 spring:
   application:
     name: consumer-user1
+  security:
+    user:
+      name: root
+      password: 123456

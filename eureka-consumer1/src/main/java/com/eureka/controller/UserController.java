@@ -15,7 +15,6 @@ public class UserController {
     private RestTemplate restTemplate;
 
     @RequestMapping("/query")
-    @ResponseBody
     public String hiService(String name) {
         return restTemplate.getForObject("http://PROVIDER-HI/hi?name=" + name, String.class);
     }
